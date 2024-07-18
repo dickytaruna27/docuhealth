@@ -18,11 +18,19 @@ module.exports = {
       level: {
         type: Sequelize.INTEGER
       },
-      SymtonId: {
-        type: Sequelize.INTEGER
+      SymptomId: {
+        type: Sequelize.INTEGER,
+        references:{
+          model:"Symptoms",
+          key: "id"
+        }
       },
       UserId: {
-        type: Sequelize.INTEGER
+        type: Sequelize.INTEGER,
+        references:{
+          model:"Users",
+          key:"id"
+        }
       },
       createdAt: {
         allowNull: false,

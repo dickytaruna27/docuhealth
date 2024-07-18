@@ -11,13 +11,15 @@ module.exports = (sequelize, DataTypes) => {
      */
     static associate(models) {
       // define association here
+      Disease.belongsTo(models.Symptom)
+      Disease.belongsTo(models.User)
     }
   }
   Disease.init({
     name: DataTypes.STRING,
     description: DataTypes.STRING,
     level: DataTypes.INTEGER,
-    SymtonId: DataTypes.INTEGER,
+    SymptomId: DataTypes.INTEGER,
     UserId: DataTypes.INTEGER
   }, {
     sequelize,
