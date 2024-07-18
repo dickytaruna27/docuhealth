@@ -30,7 +30,7 @@
             <tr>
               <th scope="col" class="px-6 py-3 text-white">First Name</th>
               <th scope="col" class="px-6 py-3 text-white">Last Name</th>
-              <th scope="col" class="px-6 py-3 text-white">Date of birth</th>
+              <th scope="col" class="px-6 py-3 text-white">Age</th>
               <th scope="col" class="px-6 py-3 text-white text-right">Gender</th>
             </tr>
           </thead>
@@ -38,12 +38,14 @@
 
           <!-- ini table body -->
           <tbody>
-            <tr class="bg-white border-b dark:bg-red-500 dark:border-red-700 hover:bg-red-50 dark:hover:bg-red-600">
-              <th scope="row" class="px-6 py-4 font-medium text-white whitespace-nowrap dark:text-white">dicky</th>
-              <td class="px-6 py-4 text-white">mardiky</td>
-              <td class="px-6 py-4 text-white">07/07/07</td>
-              <td class="px-6 py-4 text-white text-right">Male</td>
-            </tr>
+            <% profile.forEach(el => { %>
+              <tr class="bg-white border-b dark:bg-red-500 dark:border-red-700 hover:bg-red-50 dark:hover:bg-red-600">
+                <th scope="row" class="px-6 py-4 font-medium text-white whitespace-nowrap dark:text-white"><%= el.firstName %></th>
+                <td class="px-6 py-4 text-white"><%= el.lastName %></td>
+                <td class="px-6 py-4 text-white"><%= Helper.getAge(el.name) %></td>
+                <td class="px-6 py-4 text-white text-right"><%= el.gender %></td>
+              </tr>
+            <% }) %>
           </tbody>
           <!-- ini table body -->
         </table>
@@ -51,11 +53,11 @@
     </div>
     <!-- ini tabel -->
 
-    <a href="" class="flex items-center justify-center mb-10">  <!--ini ngarah ke home-->
+    <a href="/disease" class="flex items-center justify-center mb-10">  <!--ini ngarah ke home-->
       <button class="bg-red-600 text-white py-3 px-6 rounded-md cursor-pointer transition-colors duration-300 hover:bg-red-500">Back to Home Page</button>
     </a>
 
-    <a href="" class="flex items-center justify-center">  <!--ini ngarah ke logout-->
+    <a href="/logout" class="flex items-center justify-center">  <!--ini ngarah ke logout-->
       <button class="bg-red-600 text-white py-3 px-6 rounded-md cursor-pointer transition-colors duration-300 hover:bg-red-500">Logout</button>
     </a>
 

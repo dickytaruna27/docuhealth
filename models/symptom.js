@@ -11,10 +11,13 @@ module.exports = (sequelize, DataTypes) => {
      */
     static associate(models) {
       // define association here
+    Symptom.hasMany(models.SymptomToDisease)
+
     }
   }
   Symptom.init({
-    name: DataTypes.STRING
+    name: DataTypes.STRING,
+    description:DataTypes.STRING
   }, {
     sequelize,
     modelName: 'Symptom',

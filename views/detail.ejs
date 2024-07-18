@@ -12,7 +12,7 @@
       <!-- ini navbar -->
       <nav class="bg-white dark:bg-red-500 fixed w-full z-20 top-0 start-0 border-b border-red-200 dark:border-red-400">
         <div class="max-w-screen-xl flex flex-wrap items-center justify-between mx-auto p-4">
-          <a href=""> <!-- to homepage --> 
+          <a href="/disease"> <!-- to homepage --> 
             <label for="" class="text-white text-3xl font-bold">DocuHealth</label>
           </a>
         </div>
@@ -39,11 +39,13 @@
             <!-- ini table body -->
             <tbody>
               <tr class="bg-white border-b dark:bg-red-500 dark:border-red-700 hover:bg-red-50 dark:hover:bg-red-600">
-                <th scope="row" class="px-6 py-4 font-medium text-white whitespace-nowrap dark:text-white">Influenza</th>
-                <td class="px-6 py-4 text-white">Lorem ipsum dolor sit amet, consectetur adipiscing elit</td>
-                <td class="px-6 py-4 text-white">Pilek</td>
-                <td class="px-6 py-4 text-white text-right">1</td>
-              </tr>
+                <th scope="row" class="px-6 py-4 font-medium text-white whitespace-nowrap dark:text-white"><%= disease.name %></th>
+                <td class="px-6 py-4 text-white"><%= disease.description %></td>
+                <% symptoms.forEach(el => { %>
+                  <td class="px-6 py-4 text-white"><%= el.name %></td>
+                <% }) %>
+                  <td class="px-6 py-4 text-white text-right"><%= disease.level %></td>
+                </tr>
             </tbody>
             <!-- ini table body -->
           </table>
@@ -51,7 +53,7 @@
       </div>
       <!-- ini tabel -->
 
-      <a href="" class="flex items-center justify-center">  <!--ini ngarah ke home-->
+      <a href="/disease" class="flex items-center justify-center">  <!--ini ngarah ke home-->
         <button class="bg-red-600 text-white py-3 px-6 rounded-md cursor-pointer transition-colors duration-300 hover:bg-red-500">Back to Home Page</button>
       </a>
 

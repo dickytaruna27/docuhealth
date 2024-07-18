@@ -1,0 +1,82 @@
+[
+  {
+    "name": "Batuk",
+    "description": "Respon tubuh untuk membersihkan saluran pernapasan dari iritasi."
+  },
+  {
+    "name": "Demam",
+    "description": "Kenaikan suhu tubuh di atas normal sebagai respon terhadap infeksi."
+  },
+  {
+    "name": "Sesak Napas",
+    "description": "Kesulitan bernapas atau napas pendek."
+  },
+  {
+    "name": "Nyeri Perut",
+    "description": "Rasa sakit atau tidak nyaman di area perut."
+  },
+  {
+    "name": "Mual",
+    "description": "Rasa ingin muntah."
+  },
+  {
+    "name": "Gatal",
+    "description": "Rasa tidak nyaman pada kulit yang menyebabkan dorongan untuk menggaruk."
+  },
+  {
+    "name": "Ruam Kulit",
+    "description": "Perubahan warna atau tekstur pada kulit."
+  },
+  {
+    "name": "Nyeri Tenggorokan",
+    "description": "Rasa sakit atau iritasi pada tenggorokan."
+  },
+  {
+    "name": "Sakit Kepala",
+    "description": "Rasa sakit atau tidak nyaman di area kepala."
+  },
+  {
+    "name": "Bengkak pada Kelenjar",
+    "description": "Pembesaran kelenjar akibat infeksi atau peradangan."
+  },
+  {
+    "name": "Kelelahan",
+    "description": "Rasa lelah atau kurang energi."
+  },
+  {
+    "name": "Sakit pada Sendi",
+    "description": "Nyeri atau tidak nyaman pada sendi."
+  },
+  {
+    "name": "Pilek",
+    "description": "Produksi lendir berlebih dari hidung."
+  },
+  {
+    "name": "Sakit Gigi",
+    "description": "Nyeri pada gigi atau gusi."
+  },
+  {
+    "name": "Mata Merah",
+    "description": "Peradangan atau infeksi pada mata yang menyebabkan kemerahan."
+  },
+  {
+    "name": "Hidung Tersumbat",
+    "description": "Kesulitan bernapas melalui hidung karena sumbatan."
+  },
+  {
+    "name": "Bengkak pada Kulit",
+    "description": "Pembengkakan pada kulit akibat infeksi atau alergi."
+  },
+  {
+    "name": "Sakit Punggung",
+    "description": "Rasa sakit atau tidak nyaman di area punggung."
+  },
+  {
+    "name": "Muntah",
+    "description": "Pengeluaran isi perut melalui mulut."
+  },
+  {
+    "name": "Sakit di Dada",
+    "description": "Rasa sakit atau tidak nyaman di area dada."
+  }
+]

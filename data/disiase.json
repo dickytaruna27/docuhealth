@@ -1,0 +1,122 @@
+[
+  {
+    "name": "Influenza",
+    "description": "Penyakit pernapasan menular yang disebabkan oleh virus influenza.",
+    "level": 1,
+    "UserId": 1
+  },
+  {
+    "name": "Bronkitis",
+    "description": "Peradangan pada bronkus yang menyebabkan batuk dan produksi lendir.",
+    "level": 2,
+    "UserId": 2
+  },
+  {
+    "name": "Asma",
+    "description": "Kondisi di mana saluran udara menyempit dan membengkak serta dapat menghasilkan lendir berlebih.",
+    "level": 2,
+    "UserId": 1
+  },
+  {
+    "name": "Infeksi Saluran Kemih",
+    "description": "Infeksi pada bagian manapun dari sistem kemih.",
+    "level": 1,
+    "UserId": 2
+  },
+  {
+    "name": "Gastritis",
+    "description": "Peradangan pada lapisan lambung yang dapat menyebabkan sakit perut.",
+    "level": 2,
+    "UserId": 1
+  },
+  {
+    "name": "Konjungtivitis",
+    "description": "Peradangan atau infeksi pada selaput yang melapisi kelopak mata dan menutupi bagian putih bola mata.",
+    "level": 1,
+    "UserId": 2
+  },
+  {
+    "name": "Dermatitis",
+    "description": "Peradangan pada kulit yang menyebabkan gatal atau ruam.",
+    "level": 1,
+    "UserId": 1
+  },
+  {
+    "name": "Sinusitis",
+    "description": "Peradangan atau pembengkakan pada jaringan sinus.",
+    "level": 2,
+    "UserId": 2
+  },
+  {
+    "name": "Faringitis",
+    "description": "Peradangan pada faring yang menyebabkan sakit tenggorokan.",
+    "level": 1,
+    "UserId": 1
+  },
+  {
+    "name": "Otitis Media",
+    "description": "Infeksi pada telinga tengah.",
+    "level": 2,
+    "UserId": 2
+  },
+  {
+    "name": "Alergi",
+    "description": "Reaksi berlebihan dari sistem kekebalan tubuh terhadap zat tertentu.",
+    "level": 1,
+    "UserId": 1
+  },
+  {
+    "name": "Migraine",
+    "description": "Sakit kepala yang parah dan seringkali disertai gejala lain seperti mual dan sensitivitas terhadap cahaya.",
+    "level": 2,
+    "UserId": 2
+  },
+  {
+    "name": "Cacar Air",
+    "description": "Penyakit menular yang menyebabkan ruam kulit yang gatal dan bintik merah di seluruh tubuh.",
+    "level": 1,
+    "UserId": 1
+  },
+  {
+    "name": "Gondongan",
+    "description": "Penyakit menular yang menyebabkan pembengkakan kelenjar ludah.",
+    "level": 2,
+    "UserId": 2
+  },
+  {
+    "name": "Rubella",
+    "description": "Infeksi virus yang menyebabkan ruam merah pada kulit.",
+    "level": 1,
+    "UserId": 1
+  },
+  {
+    "name": "Tonsilitis",
+    "description": "Peradangan pada amandel yang menyebabkan sakit tenggorokan dan kesulitan menelan.",
+    "level": 2,
+    "UserId": 2
+  },
+  {
+    "name": "Infeksi Kulit",
+    "description": "Infeksi pada kulit yang dapat disebabkan oleh bakteri, virus, atau jamur.",
+    "level": 1,
+    "UserId": 1
+  },
+  {
+    "name": "Tifus",
+    "description": "Penyakit menular yang disebabkan oleh bakteri Salmonella typhi.",
+    "level": 2,
+    "UserId": 2
+  },
+  {
+    "name": "Gingivitis",
+    "description": "Peradangan pada gusi yang biasanya disebabkan oleh infeksi bakteri.",
+    "level": 1,
+    "UserId": 1
+  },
+  {
+    "name": "Eczema",
+    "description": "Kondisi kulit yang menyebabkan bercak merah, gatal, dan kering.",
+    "level": 2,
+    "UserId": 2
+  }
+]

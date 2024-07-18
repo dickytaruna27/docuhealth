@@ -14,12 +14,12 @@
     <h3 class="textlg">
       Tolong isi kredensial anda
     </h3>
-    <form action="">
+    <form action="/login" method="post">
       <label for="" class="block mt-4 mb-2 text-left text-gray-700 font-bold">Username:</label>
-      <input type="text" id="" name="" placeholder="Tolong isi username anda" class="block w-full mb-6 px-4 py-2 border border-gray-300 rounded-md focus:outline-none focus:border-red-400">
+      <input type="text" id="" name="email" placeholder="Tolong isi username anda" class="block w-full mb-6 px-4 py-2 border border-gray-300 rounded-md focus:outline-none focus:border-red-400">
     
       <label for="" class="block mb-2 text-left text-gray-700 font-bold">Password:</label>
-      <input type="text" id="" name="" placeholder="Tolong isi password anda" class="block w-full mb-6 px-4 py-2 border border-gray-300 rounded-md focus:outline-none focus:border-red-400">
+      <input type="text" id="" name="password" placeholder="Tolong isi password anda" class="block w-full mb-6 px-4 py-2 border border-gray-300 rounded-md focus:outline-none focus:border-red-400">
 
       <div class="flex justify-center items-center">
         <button type="submit" class="bg-red-600 text-white py-3 px-6 rounded-md cursor-pointer transition-colors duration-300 hover:bg-red-500">
@@ -28,7 +28,7 @@
       </div>
     </form>
     <p class="mt-4">Belum punya akun?</p> 
-      <a href="" class="text-blue-500 hover:underline">Buat dahulu</a> <!-- ini ngarah ke register page -->
+      <a href="/register" class="text-blue-500 hover:underline">Buat dahulu</a> <!-- ini ngarah ke register page -->
   </div>
 </body>
 </html>
