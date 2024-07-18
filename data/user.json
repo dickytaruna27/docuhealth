@@ -3,5 +3,10 @@
     "email":"athuf@gmail.com",
     "password":"atob1234",
     "role":"admin"
+  },
+  {
+    "email":"atob@gmail.com",
+    "password":"atob12345",
+    "role":"admin"
   }
 ]

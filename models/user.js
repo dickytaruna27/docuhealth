@@ -24,7 +24,7 @@ module.exports = (sequelize, DataTypes) => {
     modelName: 'User',
   });
   User.beforeCreate(function(instance, option){
-    let roleUser = "Pasien"
+    let roleUser = "user"
     instance.role = roleUser
   })
   return User;
