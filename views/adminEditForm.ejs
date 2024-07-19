@@ -19,7 +19,7 @@
   <!-- ini navbar -->
 
   <h1 class="flex items-center justify-center mt-20 font-bold text-4xl text-red-600">Tambah Penyakit</h1>
-  <form action="/admin/diseases/:id/edit" method="post" class="max-w-sm mx-auto mt-20">
+  <form action="/admin/diseases/<%= disease.id %>/edit" method="post" class="max-w-sm mx-auto mt-20">
       <div class="mb-5">
         <label for="" class="block mb-2 text-sm font-medium text-red-900 dark:text-red-500">Nama Penyakit</label>
         <input type="text" id="" name="name" value="<%= disease.name %>" class="bg-red-50 border border-red-300 text-gray-900 text-sm rounded-lg focus:ring-red-500 focus:border-red-500 block w-full p-2.5 dark:bg-white dark:border-red-600 dark:placeholder-red-400 dark:text-dark dark:focus:ring-red-500 dark:focus:border-red-500" />
@@ -37,12 +37,12 @@
         </select>
       <label for="" class="block mb-2 text-sm font-medium text-red-900 dark:text-red-500">Pilih Macam Gejala</label>
         <select id="" name="UserId" class="bg-red-50 border border-red-300 text-gray-900 text-sm rounded-lg focus:ring-red-500 focus:border-red-500 block w-full p-2.5 dark:bg-red-500 dark:border-red-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-red-500 dark:focus:border-red-500 mb-20">
+          <option value="" disabled selected>Gejala</option>
           <% symptoms.forEach(el => { %>
-            <option value="" disabled selected>Gejala</option>
-            <option value="<%= el.id %>"><%= el.UserId === el.id %></option>
+            <option value="<%= el.id %>" <%= el.id === disease.SymptomId ? 'selected' : '' %>><%= el.name %></option>
           <% }) %>
         </select>
-    <button type="button" class="flex items-center justify-center :outline-none text-white bg-red-700 hover:bg-red-800 focus:ring-4 focus:ring-red-300 font-medium rounded-lg text-sm px-5 py-2.5 me-2 mb-2 dark:bg-red-600 dark:hover:bg-red-700 dark:focus:ring-red-900">Submit</button>
+    <button type="submit" class="flex items-center justify-center :outline-none text-white bg-red-700 hover:bg-red-800 focus:ring-4 focus:ring-red-300 font-medium rounded-lg text-sm px-5 py-2.5 me-2 mb-2 dark:bg-red-600 dark:hover:bg-red-700 dark:focus:ring-red-900">Submit</button>
   </form>
 </body>
 </html>

@@ -5,7 +5,7 @@ class Controller {
   static async ShowDisiase(req, res) {
     try {
       const disease = await Disease.findAll()
-      console.log(disease);
+      // console.log(disease);
       res.render("homePage.ejs", { disease })
     } catch (error) {
       res.send(error)
@@ -92,6 +92,7 @@ class Controller {
       res.send(error)
     }
   }
+
   static async AdminDeleteDisease(req, res) {
     try {
       const { id } = req.params
@@ -108,8 +109,8 @@ class Controller {
     try {
       const { id } = req.params
       const profile = await Profile.findOne(id)
-      console.log(profile, 'ini profile');
-      res.render("profile.ejs", { profile })
+      // console.log(profile, 'ini profile');
+      res.render("profile.ejs", { profile: [profile], Helper })
     } catch (error) {
       res.send(error)
     }
@@ -118,12 +119,12 @@ class Controller {
   static async register(req, res) {
     try {
       const { firstName, lastName, dateOfBirth, gender, email, password } = req.body
-      console.log(req.body);
+      // console.log(req.body);
       const hashedPassword = await Helper.hashPassword(password)
       const user = await User.create({ email, password: hashedPassword })
       await Profile.create({ firstName, lastName, dateOfBirth, gender, UserId: user.id })
       res.redirect("/login")
-      console.log(user);
+      // console.log(user);
     } catch (error) {
       res.send(error)
     }
@@ -137,7 +138,7 @@ class Controller {
           email
         }
       })
-      console.log(user, 'userrrrr');
+      // console.log(user, 'userrrrr');
       const { id, email: emailFromDb, password: passwordFromDb, role } = user.dataValues;
       const isMatch = await Helper.comparePassword(password, passwordFromDb)
       if (isMatch) {

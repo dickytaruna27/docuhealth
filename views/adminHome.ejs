@@ -50,9 +50,9 @@
                   <a href="/admin/diseases/<%= el.id %>/edit"> <!-- ini edit -->
                     <button class="bg-green-600 text-white py-3 px-6 rounded-md cursor-pointer transition-colors duration-300 hover:bg-green-500">Edit</button>
                   </a>
-                  <a href="/admin/diseases/<%= el.id %>/delete"> <!-- ini delete -->
+                  <form action="/admin/diseases/<%= el.id %>/delete" method="post" style="display:inline"> <!-- ini delete -->
                     <button class="bg-pink-600 text-white py-3 px-6 rounded-md cursor-pointer transition-colors duration-300 hover:bg-pink-500">Delete</button>
-                  </a>
+                  </form>
                 </td>
               </tr>
             <% }) %>
